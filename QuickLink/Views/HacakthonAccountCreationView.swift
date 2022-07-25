@@ -7,14 +7,18 @@
 
 import SwiftUI
 
-struct HacakthonAccountCreationView: View {
+struct HackathonCreationView: View {
     var body: some View {
-        Text("Hackathon Creation")
+        ZStack {
+            Text("Hackathon Creation")
+        }  .navigationBarBackButtonHidden(true)
+        
     }
+        
 }
 
-struct HacakthonAccountCreationView_Previews: PreviewProvider {
+struct HackathonCreationView_Previews: PreviewProvider {
     static var previews: some View {
-        HacakthonAccountCreationView()
+        HackathonCreationView()
     }
 }

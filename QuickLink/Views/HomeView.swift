@@ -32,6 +32,8 @@ struct ContentView: View {
                     .frame(height:20)
                 NavigationLink(destination: SignUpView(), label: {SignUpBoxView()})
                 Spacer()
+                    .navigationTitle("")
+                    .navigationBarBackButtonHidden(true)
                 
                 
             }

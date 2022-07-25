@@ -21,8 +21,10 @@ struct JobCreationBoxView: View {
                 
                 
         }.background(sign_in_box_color)
+
         
     }
+
 }
 
 struct JobCreationBoxView_Previews: PreviewProvider {

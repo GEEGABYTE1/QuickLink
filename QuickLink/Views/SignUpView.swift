@@ -8,8 +8,9 @@
 import SwiftUI
 
 
-
 struct SignUpView: View {
+    
+    
     var body: some View {
         
         NavigationView {
@@ -22,11 +23,15 @@ struct SignUpView: View {
                         .font(.title)
                         .foregroundColor(.white)
                     Spacer()
-                    NavigationLink(destination:HacakthonAccountCreationView(), label:{HackathonAccountCreationBoxView()})
+                    NavigationLink(destination:HackathonCreationView(), label:{HackathonAccountCreationBoxView()})
+
+
+      
                     Spacer()
                         .frame(height: 20)
                         
                     NavigationLink(destination:JobCreationView(), label:{JobCreationBoxView()})
+                        
                     Spacer()
                     
                     
@@ -34,8 +39,10 @@ struct SignUpView: View {
                 }
                     
             }
+
             
         }
+
 
         
         

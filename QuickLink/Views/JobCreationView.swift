@@ -9,8 +9,12 @@ import SwiftUI
 
 struct JobCreationView: View {
     var body: some View {
-        Text("Job Creation")
+        ZStack {
+            Text("Job Creation")
+        }  .navigationBarBackButtonHidden(true)
+        
     }
+        
 }
 
 struct JobCreationView_Previews: PreviewProvider {
