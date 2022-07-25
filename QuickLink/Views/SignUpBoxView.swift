@@ -1,0 +1,32 @@
+//
+//  SignUpBoxView.swift
+//  QuickLink
+//
+//  Created by Jaival Patel on 2022-07-24.
+//
+
+import SwiftUI
+
+struct SignUpBoxView: View {
+    let sign_in_box_color = AppColor.box_color
+    
+    var body: some View {
+        HStack {
+            Text("Sign up")
+                .bold()
+                .padding()
+                .frame(height:55)
+                .frame(width: 400)
+                .foregroundColor(.white)
+                
+                
+        }.background(sign_in_box_color)
+        
+    }
+}
+
+struct SignUpBoxView_Previews: PreviewProvider {
+    static var previews: some View {
+        SignUpBoxView()
+    }
+}
