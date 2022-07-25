@@ -24,6 +24,11 @@ struct SignUpView: View {
                     Spacer()
                     NavigationLink(destination:HacakthonAccountCreationView(), label:{HackathonAccountCreationBoxView()})
                     Spacer()
+                        .frame(height: 20)
+                        
+                    NavigationLink(destination:JobCreationView(), label:{JobCreationBoxView()})
+                    Spacer()
+                    
                     
                     
                 }
