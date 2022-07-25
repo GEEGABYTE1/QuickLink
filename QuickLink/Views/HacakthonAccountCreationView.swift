@@ -38,6 +38,33 @@ struct HackathonCreationView: View {
                 .cornerRadius(5.0)
                 .padding(.bottom, 20)
                 
+            TextField("Languages", text: $username)
+                .padding()
+                .background(AppColor.box_color)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
+                
+            TextField("No. of Hackathons Won", text: $username)
+                .padding()
+                .background(AppColor.box_color)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
+        
+            TextField("Hobbies", text: $username)
+                .padding()
+                .background(AppColor.box_color)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
+                
+            TextField("Skills", text: $username)
+                .padding()
+                .background(AppColor.box_color)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
+            
+        
+
+            
             Text("Create Your Account")
                     .padding()
                     .font(.headline)
