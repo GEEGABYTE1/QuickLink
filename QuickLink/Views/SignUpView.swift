@@ -7,9 +7,35 @@
 
 import SwiftUI
 
+
+
 struct SignUpView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+            ZStack {
+                AppColor.wall_color.ignoresSafeArea()
+               
+                VStack {
+                    Text("Account Type")
+                        .padding()
+                        .font(.title)
+                        .foregroundColor(.white)
+                    Spacer()
+                    NavigationLink(destination:HacakthonAccountCreationView(), label:{HackathonAccountCreationBoxView()})
+                    Spacer()
+                    
+                    
+                }
+                    
+            }
+            
+        }
+
+        
+        
+        
+        
     }
 }
 
