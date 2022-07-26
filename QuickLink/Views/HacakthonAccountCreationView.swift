@@ -10,6 +10,7 @@ import SwiftUI
 
 
 var hackathon_accounts = HackathonAccount()
+var local_username: String = ""
 
 struct HackathonCreationView: View {
     
@@ -19,9 +20,6 @@ struct HackathonCreationView: View {
     @State var no_hackathons_won: String = ""
     @State var hobbies: String = ""
     @State var skills: String = ""
-    
-    
-    
     
     var body: some View {
         
@@ -77,6 +75,7 @@ struct HackathonCreationView: View {
             
                 Button(action:{
                     hackathon_accounts.accounts_hack[username] = [password, languages, no_hackathons_won, hobbies ,skills]
+                    local_username = username
                     print(hackathon_accounts)
 
                     

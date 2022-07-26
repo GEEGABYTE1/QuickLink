@@ -10,7 +10,8 @@ import Foundation
 struct HackathonAccount {
     
     var accounts_hack: [String:[String]] = [:]
-    var account_hacakthons_won: [String: String] = [:]
+    var accounts_bio: [String: String] = [:]
+    
     
     
     

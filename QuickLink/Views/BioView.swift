@@ -8,20 +8,6 @@
 import SwiftUI
 
 
-struct TextView: UIViewRepresentable {
-    
-    typealias UIViewType = UITextView
-    var configuration = { (view: UIViewType) in }
-    
-    func makeUIView(context: UIViewRepresentableContext<Self>) -> UIViewType {
-        UIViewType()
-    }
-    
-    func updateUIView(_ uiView: UIViewType, context: UIViewRepresentableContext<Self>) {
-        configuration(uiView)
-    }
-}
-
 struct BioView: View {
     
     @State var bio: String = ""
@@ -43,11 +29,23 @@ struct BioView: View {
                 TextEditor(text:$bio)
                     .padding()
                     .cornerRadius(75)
-                    .frame(height: 700)
+                    .frame(height: 500)
                     .foregroundColor(AppColor.alt_text_color)
+                    .lineSpacing(20)
                 
    
                 Spacer()
+                
+                Button(action:{
+                    hackathon_accounts.accounts_bio[local_username] = bio
+                    print(hackathon_accounts)
+
+                    
+                }, label: {
+                    CreateAccountView()
+                })
+                
+                
             }.padding()
 
         }
