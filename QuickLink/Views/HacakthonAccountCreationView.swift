@@ -23,6 +23,7 @@ struct HackathonCreationView: View {
     
     var body: some View {
         
+        
         ZStack {
             AppColor.wall_color.ignoresSafeArea()
             VStack {
@@ -73,13 +74,7 @@ struct HackathonCreationView: View {
                 .padding(.bottom, 20)
             
             
-                Button(action:{
-                    hackathon_accounts.accounts_hack[username] = [password, languages, no_hackathons_won, hobbies ,skills]
-                    local_username = username
-                    print(hackathon_accounts)
-
-                    
-                }, label: {
+                NavigationLink(destination:BioView(), label:{
                     CreateAccountView()
                 })
 

@@ -17,9 +17,11 @@ struct BioView: View {
         ZStack{
             AppColor.wall_color.ignoresSafeArea()
             VStack {
-                Text("Set Your Bio")
+              Spacer()
+                    .frame(height: 30)
+                Text("Set Your Bio 🙌🏻")
                     .font(.title)
-                    .padding()
+                    .padding(.leading)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 Spacer()
@@ -42,7 +44,7 @@ struct BioView: View {
 
                     
                 }, label: {
-                    CreateAccountView()
+                    PublishAccountView()
                 })
                 
                 
