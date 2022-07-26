@@ -39,6 +39,10 @@ struct SignUpView: View {
                 }
                     
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            
 
             
         }

@@ -25,16 +25,19 @@ struct HackathonCreationView: View {
         
         
         ZStack {
+            
             AppColor.wall_color.ignoresSafeArea()
+            
             VStack {
-
-                Text("Hackathon Account Creation")
-                    .font(.title)
-                    .padding()
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    
+            
             Spacer()
+            Text("Hackathon Account Creation")
+                .font(.title)
+                .padding()
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+                    
+        
              
             TextField("Username", text: $username)
                 .padding()

@@ -51,6 +51,8 @@ struct BioView: View {
             }.padding()
 
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
 }
