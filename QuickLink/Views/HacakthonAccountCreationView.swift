@@ -20,13 +20,17 @@ struct HackathonCreationView: View {
     @State var password: String = ""
     @State var languages: String = ""
     @State var no_hackathons_won: String = ""
-    @State var hobbies: String = ""
     @State var skills: String = ""
+    var disableForm: Bool {
+        username == "" || password == "" || languages == "" || no_hackathons_won == "" ||  skills == ""
+    }
     
 
     
     
     var body: some View {
+        
+
         
         
         ZStack {
@@ -34,9 +38,6 @@ struct HackathonCreationView: View {
             AppColor.wall_color.ignoresSafeArea()
             
             VStack {
-            
-            Spacer()
-                    .frame(height: 60)
                 
             
             Text("Hackathon Account")
@@ -66,8 +67,7 @@ struct HackathonCreationView: View {
                                     no_hackathons_won = filtered
                                 }
                             }
-                    
-                        TextField("Hobbies", text: $hobbies)
+                
 
                             
                         TextField("Skills", text: $skills)
@@ -76,17 +76,20 @@ struct HackathonCreationView: View {
                     }
                     .padding()
                     .frame(height: 65)
+
                     
-                
+                    
                     Section {
                         
-                        NavigationLink(destination:BioView(hack_username: username, hack_password: password, hack_languages: languages, hack_no_hackathons_won: no_hackathons_won, hack_hobbies: hobbies, hack_skills: skills), label: {CreateAccountView()}
+                        NavigationLink(destination:BioView(hack_username: username, hack_password: password, hack_languages: languages, hack_no_hackathons_won: no_hackathons_won,hack_skills: skills), label: {Text("Create Your Account")
+                                .foregroundColor(.green)
+                                .multilineTextAlignment(.center)
+                        }
                         )
-                        
                     }
+                    .disabled(disableForm)
                     
-
-
+            
 
                 }
                 .background(AppColor.wall_color)
@@ -106,6 +109,7 @@ struct HackathonCreationView: View {
             
                 
 
+            
             
                 
 
