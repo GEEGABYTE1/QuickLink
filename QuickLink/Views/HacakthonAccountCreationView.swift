@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 
 
@@ -22,6 +23,8 @@ struct HackathonCreationView: View {
     @State var hobbies: String = ""
     @State var skills: String = ""
     
+
+    
     
     var body: some View {
         
@@ -33,13 +36,15 @@ struct HackathonCreationView: View {
             VStack {
             
             Spacer()
-            Text("Hackathon Account Creation")
+                    .frame(height: 60)
+                
+            
+            Text("Hackathon Account")
                 .font(.title)
                 .padding()
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                     
-        
              
             TextField("Username", text: $username)
                 .padding()
@@ -65,6 +70,13 @@ struct HackathonCreationView: View {
                 .background(AppColor.box_color)
                 .cornerRadius(5.0)
                 .padding(.bottom, 20)
+                .keyboardType(.numberPad)
+                .onReceive(Just(no_hackathons_won)) { newValue in
+                    let filtered = newValue.filter { "0123456789".contains($0) }
+                    if filtered != newValue {
+                        no_hackathons_won = filtered
+                    }
+                }
         
             TextField("Hobbies", text: $hobbies)
                 .padding()
@@ -77,9 +89,11 @@ struct HackathonCreationView: View {
                 .background(AppColor.box_color)
                 .cornerRadius(5.0)
                 .padding(.bottom, 20)
+                
+                
             
             
-            
+                
             NavigationLink(destination:BioView(hack_username: username, hack_password: password, hack_languages: languages, hack_no_hackathons_won: no_hackathons_won, hack_hobbies: hobbies, hack_skills: skills), label: {CreateAccountView()}
             )
             
@@ -94,9 +108,11 @@ struct HackathonCreationView: View {
             
             
         }
-        .navigationBarTitle("")
+        .navigationBarTitle("", displayMode: .inline)
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        .navigationViewStyle(.stack)
+         
             
         
     }
