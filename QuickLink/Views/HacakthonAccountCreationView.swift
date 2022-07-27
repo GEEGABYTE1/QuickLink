@@ -12,6 +12,7 @@ import SwiftUI
 var hackathon_accounts = HackathonAccount()
 var local_username: String = ""
 
+
 struct HackathonCreationView: View {
     
     @State var username: String = ""
@@ -20,6 +21,7 @@ struct HackathonCreationView: View {
     @State var no_hackathons_won: String = ""
     @State var hobbies: String = ""
     @State var skills: String = ""
+    
     
     var body: some View {
         
@@ -77,9 +79,12 @@ struct HackathonCreationView: View {
                 .padding(.bottom, 20)
             
             
-                NavigationLink(destination:BioView(), label:{
-                    CreateAccountView()
-                })
+            
+            NavigationLink(destination:BioView(hack_username: username, hack_password: password, hack_languages: languages, hack_no_hackathons_won: no_hackathons_won, hack_hobbies: hobbies, hack_skills: skills), label: {CreateAccountView()}
+            )
+            
+                
+
 
             
 
@@ -88,7 +93,10 @@ struct HackathonCreationView: View {
             }.padding()
             
             
-        }  .navigationBarBackButtonHidden(true)
+        }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
             
         
     }

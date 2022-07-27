@@ -77,10 +77,11 @@ struct JobCreationView: View {
                 .padding(.bottom, 20)
             
             
+                /*
                 NavigationLink(destination:BioView(), label:{
                     CreateAccountView()
                 })
-                
+                */
                 
 
             
