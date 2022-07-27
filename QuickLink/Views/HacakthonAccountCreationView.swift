@@ -44,58 +44,68 @@ struct HackathonCreationView: View {
                 .padding()
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
+                
+                Form {
+                    Section {
+                        TextField("Username", text: $username)
+
+                            
+                        SecureField("Password", text: $password)
+
+                        
+                            
+                        TextField("Languages", text: $languages)
+
+                            
+                        TextField("No. of Hackathons Won", text: $no_hackathons_won)
+
+                            .keyboardType(.numberPad)
+                            .onReceive(Just(no_hackathons_won)) { newValue in
+                                let filtered = newValue.filter { "0123456789".contains($0) }
+                                if filtered != newValue {
+                                    no_hackathons_won = filtered
+                                }
+                            }
                     
-             
-            TextField("Username", text: $username)
-                .padding()
-                .background(AppColor.box_color)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
-                
-            SecureField("Password", text: $password)
-                .padding()
-                .background(AppColor.box_color)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
-            
-                
-            TextField("Languages", text: $languages)
-                .padding()
-                .background(AppColor.box_color)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
-                
-            TextField("No. of Hackathons Won", text: $no_hackathons_won)
-                .padding()
-                .background(AppColor.box_color)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
-                .keyboardType(.numberPad)
-                .onReceive(Just(no_hackathons_won)) { newValue in
-                    let filtered = newValue.filter { "0123456789".contains($0) }
-                    if filtered != newValue {
-                        no_hackathons_won = filtered
+                        TextField("Hobbies", text: $hobbies)
+
+                            
+                        TextField("Skills", text: $skills)
+
+                        
                     }
+                    .padding()
+                    .frame(height: 65)
+                    
+                
+                    Section {
+                        
+                        NavigationLink(destination:BioView(hack_username: username, hack_password: password, hack_languages: languages, hack_no_hackathons_won: no_hackathons_won, hack_hobbies: hobbies, hack_skills: skills), label: {CreateAccountView()}
+                        )
+                        
+                    }
+                    
+
+
+
                 }
-        
-            TextField("Hobbies", text: $hobbies)
-                .padding()
-                .background(AppColor.box_color)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
-                
-            TextField("Skills", text: $skills)
-                .padding()
-                .background(AppColor.box_color)
-                .cornerRadius(5.0)
-                .padding(.bottom, 20)
+                .background(AppColor.wall_color)
+                .foregroundColor(AppColor.box_color)
+                .accentColor(AppColor.box_color)
+                .background(AppColor.wall_color)
+                .onAppear { // ADD THESE
+                  UITableView.appearance().backgroundColor = .clear
+                }
+                .onDisappear {
+                  UITableView.appearance().backgroundColor = .systemGroupedBackground
+                }
+
                 
                 
             
             
                 
-            NavigationLink(destination:BioView(hack_username: username, hack_password: password, hack_languages: languages, hack_no_hackathons_won: no_hackathons_won, hack_hobbies: hobbies, hack_skills: skills), label: {CreateAccountView()}
-            )
+
             
                 
 
