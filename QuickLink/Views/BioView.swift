@@ -18,6 +18,9 @@ struct BioView: View {
     
     var hack_skills: String
     
+    
+    
+    
     init(hack_username: String, hack_password: String, hack_languages: String, hack_no_hackathons_won: String, hack_skills: String) {
         self.hack_username = hack_username
         self.hack_password = hack_password
@@ -27,6 +30,7 @@ struct BioView: View {
         
     }
     
+        
     var body: some View {
         
         ZStack{
@@ -54,7 +58,7 @@ struct BioView: View {
                 Spacer()
                 
                 Button(action:{
-                    hackathon_accounts.accounts_bio[local_username] = bio
+                    hackathon_accounts.accounts_bio[self.hack_username] = bio
                     hackathon_accounts.accounts_hack[self.hack_username] = [self.hack_password, self.hack_languages, self.hack_no_hackathons_won, self.hack_skills]
                     print(hackathon_accounts)
 

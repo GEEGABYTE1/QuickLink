@@ -11,7 +11,6 @@ import Combine
 
 
 var hackathon_accounts = HackathonAccount()
-var local_username: String = ""
 
 
 struct HackathonCreationView: View {
