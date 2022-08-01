@@ -17,7 +17,7 @@ struct SuccessView: View {
             home_color.ignoresSafeArea()
             
             VStack {
-                Text("Congratulations, your account is successfully made. You can now return to the home screen and Sign In 🦄")
+                Text("Congratulations, your account is successfully made 🎆. You can now return to the home screen and Sign In 🦄")
                     .bold()
                     .padding()
                     .font(.title)
@@ -27,6 +27,10 @@ struct SuccessView: View {
                     
                    
             }
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            .navigationViewStyle(.stack)
             
         }
 
