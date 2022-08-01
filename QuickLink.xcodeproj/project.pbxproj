@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C9562EF72890595F000F555D /* JobAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9562EF62890595F000F555D /* JobAccountModel.swift */; };
+		C98B61ED2898777D00A91288 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B61EC2898777D00A91288 /* SignInModel.swift */; };
 		C98C7E48288E12F10048AD24 /* QuickLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */; };
 		C98C7E4A288E12F10048AD24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E49288E12F10048AD24 /* HomeView.swift */; };
 		C98C7E4C288E12F30048AD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98C7E4B288E12F30048AD24 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		C9562EF62890595F000F555D /* JobAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobAccountModel.swift; sourceTree = "<group>"; };
+		C98B61EC2898777D00A91288 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		C98C7E44288E12F10048AD24 /* QuickLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinkApp.swift; sourceTree = "<group>"; };
 		C98C7E49288E12F10048AD24 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				C98C7E73288E142D0048AD24 /* ColorModel.swift */,
 				C9C38225288F1E7B002C2609 /* HackathonAccountModel.swift */,
+				C98B61EC2898777D00A91288 /* SignInModel.swift */,
 				C9562EF62890595F000F555D /* JobAccountModel.swift */,
 			);
 			path = Models;
@@ -323,6 +326,7 @@
 				C9AB0CE92890C61E00379B37 /* JobBioView.swift in Sources */,
 				C98C7E48288E12F10048AD24 /* QuickLinkApp.swift in Sources */,
 				C98C7E7F288E1E910048AD24 /* SignUpBoxView.swift in Sources */,
+				C98B61ED2898777D00A91288 /* SignInModel.swift in Sources */,
 				C9C38230288F7CFA002C2609 /* PublishAccountView.swift in Sources */,
 				C98C7E81288E1ED70048AD24 /* SignUpView.swift in Sources */,
 				C9C3822E288F7225002C2609 /* BioView.swift in Sources */,

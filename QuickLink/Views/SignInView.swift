@@ -90,7 +90,7 @@ struct SignInView: View {
             
             
         }
-        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarTitle("")
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationViewStyle(.stack)
