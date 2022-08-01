@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+
 func verify_user(rel_user: String) -> Bool {
     // Hackathon Account Model
     let accounts_hack_keys = hackathon_accounts.accounts_hack.keys
@@ -39,7 +41,7 @@ func verify_pass(rel_pass: String, rel_user: String) -> Bool {
     // Hackathon Check
     if let relative_data = hackathon_accounts.accounts_hack[rel_user] {
         print(relative_data)
-        let relative_password = relative_data[1]
+        let relative_password = relative_data[0]
         if rel_pass == relative_password {
             return true
         }
@@ -47,7 +49,7 @@ func verify_pass(rel_pass: String, rel_user: String) -> Bool {
         
         if let relative_job_data = job_accounts.accounts_job[rel_user] {
             print(relative_job_data)
-            let relative_job_password = relative_job_data[1]
+            let relative_job_password = relative_job_data[0]
             if rel_pass == relative_job_password {
                 return true
             }
@@ -69,15 +71,21 @@ func verify_account(user: String, pass: String) -> Bool {
     if user_verification == false {
         print("Username not found")
     } else {
+        print("Username Found")
         let pass_result = verify_pass(rel_pass: pass, rel_user: user)
         
         if pass_result == true && user_verification == true {
+            print("It is now true")
             return true
         } else {
+            print("It is false")
             return false
         }
     }
     
     // Should not reach this case
+    print("Reached Final Case")
     return false
 }
+    
+
