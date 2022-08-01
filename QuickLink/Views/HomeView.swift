@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     let home_color = AppColor.wall_color
 
@@ -36,14 +36,16 @@ struct ContentView: View {
                 
                 
             }
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            .navigationViewStyle(.stack)
                 
                 
                 
 
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
-            .navigationBarBackButtonHidden(true)
+
             
         }
         
@@ -70,6 +72,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C9562EF72890595F000F555D /* JobAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9562EF62890595F000F555D /* JobAccountModel.swift */; };
+		C956BB4528988FFE005B43A8 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956BB4428988FFE005B43A8 /* SuccessView.swift */; };
 		C98B61ED2898777D00A91288 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B61EC2898777D00A91288 /* SignInModel.swift */; };
 		C98C7E48288E12F10048AD24 /* QuickLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */; };
 		C98C7E4A288E12F10048AD24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E49288E12F10048AD24 /* HomeView.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		C9562EF62890595F000F555D /* JobAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobAccountModel.swift; sourceTree = "<group>"; };
+		C956BB4428988FFE005B43A8 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		C98B61EC2898777D00A91288 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		C98C7E44288E12F10048AD24 /* QuickLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinkApp.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				C9C3822F288F7CF9002C2609 /* PublishAccountView.swift */,
 				C98C7E88288E23EC0048AD24 /* JobCreationView.swift */,
 				C9AB0CE82890C61E00379B37 /* JobBioView.swift */,
+				C956BB4428988FFE005B43A8 /* SuccessView.swift */,
 				C9C3822D288F7225002C2609 /* BioView.swift */,
 				C98C7E7C288E1C140048AD24 /* SignInView.swift */,
 			);
@@ -330,6 +333,7 @@
 				C9C38230288F7CFA002C2609 /* PublishAccountView.swift in Sources */,
 				C98C7E81288E1ED70048AD24 /* SignUpView.swift in Sources */,
 				C9C3822E288F7225002C2609 /* BioView.swift in Sources */,
+				C956BB4528988FFE005B43A8 /* SuccessView.swift in Sources */,
 				C9C38226288F1E7B002C2609 /* HackathonAccountModel.swift in Sources */,
 				C9C38228288F665C002C2609 /* CreateAccountView.swift in Sources */,
 				C9562EF72890595F000F555D /* JobAccountModel.swift in Sources */,

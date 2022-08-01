@@ -11,7 +11,10 @@ import SwiftUI
 struct QuickLinkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
+
+
+

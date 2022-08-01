@@ -10,6 +10,7 @@ import SwiftUI
 
 struct BioView: View {
     
+    @State var button_clicked: Bool = false
     @State var bio: String = ""
     var hack_username: String
     var hack_password: String
@@ -32,7 +33,7 @@ struct BioView: View {
     
         
     var body: some View {
-        
+
         ZStack{
             AppColor.wall_color.ignoresSafeArea()
             VStack {
@@ -56,25 +57,34 @@ struct BioView: View {
                 
    
                 Spacer()
-                
                 Button(action:{
                     hackathon_accounts.accounts_bio[self.hack_username] = bio
                     hackathon_accounts.accounts_hack[self.hack_username] = [self.hack_password, self.hack_languages, self.hack_no_hackathons_won, self.hack_skills]
                     print(hackathon_accounts)
-
+                    button_clicked = true
                     
+
                 }, label: {
                     PublishAccountView()
                 })
                 
                 
+            NavigationLink(destination: SuccessView(), isActive: .constant(button_clicked == true), label: { Text("")})
+
             }.padding()
 
+            
+    
         }
-        .navigationBarTitle("")
+        .navigationBarTitle("", displayMode: .inline)
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        .navigationViewStyle(.stack)
+
+        
+        
     }
+
 }
 
 
