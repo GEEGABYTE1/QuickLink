@@ -18,7 +18,12 @@ struct ConnectionsView: View {
             VStack {
               Spacer()
                     .frame(height: 30)
-                Text("Send Your Connection Message  ☕️")
+                Text("Send Your Connection")
+                    .font(.title)
+                    .padding(.leading)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                Text("Message  ☕️")
                     .font(.title)
                     .padding(.leading)
                     .foregroundColor(.white)
@@ -44,6 +49,7 @@ struct ConnectionsView: View {
                         print("Message was sent and Account was Created")
                         hackathon_accounts.accounts_connection_messages[rel_user] = [connection_message]
                     }
+                    button_clicked = true
                     
                     
 
@@ -53,6 +59,7 @@ struct ConnectionsView: View {
                 
                 
             NavigationLink(destination: SuccessMessageView(), isActive: .constant(button_clicked == true), label: {Text("")})
+            
 
             }.padding()
             
