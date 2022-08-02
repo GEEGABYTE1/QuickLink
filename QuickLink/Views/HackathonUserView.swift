@@ -18,6 +18,7 @@ struct HackathonUserView: View {
                 Text("Hackathon 🌈")
                     .font(.title)
                     .foregroundColor(.white)
+                    .padding()
                 Spacer()
                 HStack{
                 Spacer()
@@ -26,7 +27,7 @@ struct HackathonUserView: View {
                 
                 }
                 Spacer()
-                    .frame(height: 660)
+                    .frame(height: 620)
             }
             
             VStack {

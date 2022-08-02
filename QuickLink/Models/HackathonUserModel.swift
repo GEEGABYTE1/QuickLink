@@ -8,4 +8,5 @@
 import Foundation
 
 var next_counter: Int = 0
+var rel_user: String = ""
 

@@ -20,6 +20,7 @@
 		C98BD52828997463009E5B63 /* ConnectionMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD52728997463009E5B63 /* ConnectionMessageView.swift */; };
 		C98BD52A28997506009E5B63 /* HackathonUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD52928997506009E5B63 /* HackathonUserModel.swift */; };
 		C98BD52C28997628009E5B63 /* NextPageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD52B28997628009E5B63 /* NextPageButtonView.swift */; };
+		C98BD52E28997B5F009E5B63 /* SuccessMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD52D28997B5F009E5B63 /* SuccessMessageView.swift */; };
 		C98C7E48288E12F10048AD24 /* QuickLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */; };
 		C98C7E4A288E12F10048AD24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E49288E12F10048AD24 /* HomeView.swift */; };
 		C98C7E4C288E12F30048AD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98C7E4B288E12F30048AD24 /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		C98BD52728997463009E5B63 /* ConnectionMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionMessageView.swift; sourceTree = "<group>"; };
 		C98BD52928997506009E5B63 /* HackathonUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUserModel.swift; sourceTree = "<group>"; };
 		C98BD52B28997628009E5B63 /* NextPageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPageButtonView.swift; sourceTree = "<group>"; };
+		C98BD52D28997B5F009E5B63 /* SuccessMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessMessageView.swift; sourceTree = "<group>"; };
 		C98C7E44288E12F10048AD24 /* QuickLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinkApp.swift; sourceTree = "<group>"; };
 		C98C7E49288E12F10048AD24 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				C98BD51C28996AE0009E5B63 /* JobUserButtonView.swift */,
 				C98BD52028996C98009E5B63 /* ConnectionsView.swift */,
 				C98BD52728997463009E5B63 /* ConnectionMessageView.swift */,
+				C98BD52D28997B5F009E5B63 /* SuccessMessageView.swift */,
 				C98BD52B28997628009E5B63 /* NextPageButtonView.swift */,
 				C9B6105E2898B8A500C58B92 /* HomepageView.swift */,
 				C9C3822D288F7225002C2609 /* BioView.swift */,
@@ -361,6 +364,7 @@
 				C98C7E87288E22050048AD24 /* JobCreationBoxView.swift in Sources */,
 				C9B6105F2898B8A500C58B92 /* HomepageView.swift in Sources */,
 				C98BD51D28996AE0009E5B63 /* JobUserButtonView.swift in Sources */,
+				C98BD52E28997B5F009E5B63 /* SuccessMessageView.swift in Sources */,
 				C98BD52C28997628009E5B63 /* NextPageButtonView.swift in Sources */,
 				C98BD523289973AB009E5B63 /* SendConnectionMessageView.swift in Sources */,
 				C9AB0CE92890C61E00379B37 /* JobBioView.swift in Sources */,

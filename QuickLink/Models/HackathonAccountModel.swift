@@ -13,6 +13,7 @@ struct HackathonAccount {
     
     var accounts_hack: [String:[String]] = [:]
     var accounts_bio: [String: String] = [:]
+    var accounts_connection_messages: [String: [String]] = [:]
     
 
 
