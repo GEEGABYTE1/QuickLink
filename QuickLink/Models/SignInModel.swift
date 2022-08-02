@@ -125,19 +125,15 @@ func fetch_account_bio(user: String) -> String {
     }
 }
     
-
-
-
-struct homepage_data {
     
-    func set_default_vars (username: String) {
-        let default_account_data = fetch_account_data(user: username)
-        rel_languages = default_account_data[1]
-        no_hackswon = default_account_data[2]
-        rel_skills = default_account_data[3]
-        rel_bio = fetch_account_bio(user: username)
-        
-    }
+func set_default_vars (username: String) {
+    let default_account_data = fetch_account_data(user: username)
+    rel_languages = default_account_data[1]
+    no_hackswon = default_account_data[2]
+    rel_skills = default_account_data[3]
+    rel_bio = fetch_account_bio(user: username)
+    
+}
     
  
-}
+

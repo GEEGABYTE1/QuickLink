@@ -10,11 +10,13 @@ import SwiftUI
 
 
 struct HomepageView: View {
-        
+    
     
     var body: some View {
         
-
+        if cur_username != "" {
+            var update_homepage: () = set_default_vars(username: cur_username)
+        }
         
         
         ZStack {
@@ -23,31 +25,31 @@ struct HomepageView: View {
             
             VStack{
                 HStack {
-                Text("user")
+                Text(cur_username)
                 Spacer()
                 }
                 Spacer()
                     .frame(height: 60)
                 HStack {
-                    Text("Languages: ")
+                    Text("Languages: \(rel_languages)")
                     Spacer()
                 }
                 Spacer()
                     .frame(height: 60)
                 HStack {
-                    Text("No. Hackathons won: ")
+                    Text("No. Hackathons won: \(no_hackswon)")
                     Spacer()
                 }
                 Spacer()
                     .frame(height: 60)
                 HStack {
-                    Text("Skills: ")
+                    Text("Skills: \(rel_skills)")
                     Spacer()
                 }
                 Spacer()
                     .frame(height: 60)
                 HStack {
-                    Text("Bio: ")
+                    Text("Bio: \(rel_bio)")
                     Spacer()
                 }
             }
