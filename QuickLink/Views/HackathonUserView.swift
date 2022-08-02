@@ -8,8 +8,76 @@
 import SwiftUI
 
 struct HackathonUserView: View {
+    
+    
     var body: some View {
-        Text("Hackathon User View")
+        
+        ZStack {
+            AppColor.wall_color.ignoresSafeArea()
+            VStack {
+                Text("Hackathon 🌈")
+                    .font(.title)
+                    .foregroundColor(.white)
+                Spacer()
+                HStack{
+                Spacer()
+                        .frame(width: 200)
+                NavigationLink(destination:HackathonUserView(), label: {NextPageButtonView()})
+                
+                }
+                Spacer()
+                    .frame(height: 660)
+            }
+            
+            VStack {
+                
+                VStack{
+                    
+                    HStack {
+                    Text("Name: \(cur_username)")
+                    Spacer()
+                    }
+                    Spacer()
+                        .frame(height: 40)
+                    HStack {
+                        Text("Languages: \(rel_languages)")
+                        Spacer()
+                    }
+                    Spacer()
+                        .frame(height: 40)
+                    HStack {
+                        Text("No. Hackathons won: \(no_hackswon)")
+                        Spacer()
+                    }
+                    Spacer()
+                        .frame(height: 40)
+                    HStack {
+                        Text("Skills: \(rel_skills)")
+                        Spacer()
+                    }
+                    Spacer()
+                        .frame(height: 40)
+                    HStack {
+                        Text("Bio: \(rel_bio)")
+                        Spacer()
+                    
+                    }
+                    
+
+                }
+                .padding()
+                .font(.headline)
+                .foregroundColor(AppColor.box_color)
+                .frame(width: 360, height: 420)
+                .background(Color.white)
+                .cornerRadius(15.0)
+                VStack {
+                    Spacer()
+                        .frame(height: 40)
+                    NavigationLink(destination: ConnectionsView(), label: {SendConnectionMessageView()})
+                }
+            }
+        }
     }
 }
 

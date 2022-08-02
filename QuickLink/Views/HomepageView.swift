@@ -23,7 +23,7 @@ struct HomepageView: View {
             AppColor.wall_color.ignoresSafeArea()
             
             VStack {
-                Text("Homepage 🌈")
+                Text("Your Homepage 🌈")
                 
                     .font(.title)
                     .foregroundColor(.white)
