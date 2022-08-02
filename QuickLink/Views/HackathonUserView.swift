@@ -31,11 +31,11 @@ struct HackathonUserView: View {
                         }
                         test_keys()
                         print("Next Counter Button Current: \(next_counter)")
-                        if next_counter >= usernames_list.count {
-                            if current_username == rel_user {
-                                print("Resetting Counter")
-                                next_counter = 0
-                            }
+                        if maximum == true && current_username == cur_username {
+                            print("Couter Resetting from \(next_counter)")
+                            next_counter = 0
+                            
+                            
                         } else {
                             next_counter += 1
                         }
@@ -44,7 +44,9 @@ struct HackathonUserView: View {
                         print("Next Button After Increment: \(next_counter)")
                         next_button_clicked = true
                     }, label: {NextPageButtonView()})
-                
+                    
+                    NavigationLink(destination:CompletionAccountView(), isActive: .constant(maximum == true), label:{Text("")})
+                    
                     NavigationLink(destination:HackathonUserView(), isActive: .constant(next_button_clicked == true && next_counter < usernames_list.count), label: {Text("")})
                     
                     

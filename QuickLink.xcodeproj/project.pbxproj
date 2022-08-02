@@ -21,6 +21,7 @@
 		C98BD52A28997506009E5B63 /* HackathonUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD52928997506009E5B63 /* HackathonUserModel.swift */; };
 		C98BD52C28997628009E5B63 /* NextPageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD52B28997628009E5B63 /* NextPageButtonView.swift */; };
 		C98BD52E28997B5F009E5B63 /* SuccessMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD52D28997B5F009E5B63 /* SuccessMessageView.swift */; };
+		C98BD53228999F3A009E5B63 /* CompletionAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD53128999F3A009E5B63 /* CompletionAccountView.swift */; };
 		C98C7E48288E12F10048AD24 /* QuickLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */; };
 		C98C7E4A288E12F10048AD24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E49288E12F10048AD24 /* HomeView.swift */; };
 		C98C7E4C288E12F30048AD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98C7E4B288E12F30048AD24 /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		C98BD52928997506009E5B63 /* HackathonUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUserModel.swift; sourceTree = "<group>"; };
 		C98BD52B28997628009E5B63 /* NextPageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPageButtonView.swift; sourceTree = "<group>"; };
 		C98BD52D28997B5F009E5B63 /* SuccessMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessMessageView.swift; sourceTree = "<group>"; };
+		C98BD53128999F3A009E5B63 /* CompletionAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionAccountView.swift; sourceTree = "<group>"; };
 		C98C7E44288E12F10048AD24 /* QuickLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinkApp.swift; sourceTree = "<group>"; };
 		C98C7E49288E12F10048AD24 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				C9AB0CE82890C61E00379B37 /* JobBioView.swift */,
 				C98BD516289967A4009E5B63 /* HackathonUserView.swift */,
 				C98BD51A28996A8D009E5B63 /* JobUserView.swift */,
+				C98BD53128999F3A009E5B63 /* CompletionAccountView.swift */,
 				C956BB4428988FFE005B43A8 /* SuccessView.swift */,
 				C98BD522289973AB009E5B63 /* SendConnectionMessageView.swift */,
 				C98BD51C28996AE0009E5B63 /* JobUserButtonView.swift */,
@@ -378,6 +381,7 @@
 				C98C7E81288E1ED70048AD24 /* SignUpView.swift in Sources */,
 				C9C3822E288F7225002C2609 /* BioView.swift in Sources */,
 				C956BB4528988FFE005B43A8 /* SuccessView.swift in Sources */,
+				C98BD53228999F3A009E5B63 /* CompletionAccountView.swift in Sources */,
 				C98BD517289967A4009E5B63 /* HackathonUserView.swift in Sources */,
 				C9C38226288F1E7B002C2609 /* HackathonAccountModel.swift in Sources */,
 				C9C38228288F665C002C2609 /* CreateAccountView.swift in Sources */,

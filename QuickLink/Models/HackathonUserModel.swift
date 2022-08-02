@@ -12,6 +12,7 @@ var rel_user: String = ""
 var next_counter: Int = 0
 var usernames_data_keys = hackathon_accounts.accounts_hack.keys
 var usernames_list = [cur_username]
+var maximum: Bool = false
 
 var current_username: String = cur_username
 var current_username_langauges : String = rel_languages
@@ -20,6 +21,10 @@ var current_username_skills: String = rel_skills
 var current_username_bio: String = rel_bio
 
 func test_keys() {
+    if maximum == true {
+        maximum = false
+        next_counter = 0
+    }
     print(usernames_data_keys)
     print(type(of:usernames_data_keys))
     print("List of Usernames")
@@ -44,7 +49,8 @@ func set_vars() {
         current_username_hackathons = no_hackswon
         current_username_skills = rel_skills
         current_username_bio = rel_bio
-        usernames_list = [rel_user]
+        usernames_list = [cur_username]
+        maximum = true
     } else {
         print("Usernames List Count: \(usernames_list.count)")
         current_username = usernames_list[next_counter]
