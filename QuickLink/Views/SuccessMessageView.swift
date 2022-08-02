@@ -26,8 +26,6 @@ struct SuccessMessageView: View {
                    
             }
             .navigationBarTitle("", displayMode: .inline)
-            .navigationBarHidden(true)
-            .navigationBarBackButtonHidden(true)
             .navigationViewStyle(.stack)
             
         }

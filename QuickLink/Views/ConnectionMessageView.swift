@@ -8,20 +8,64 @@
 import SwiftUI
 
 struct ConnectionMessageView: View {
+    @State var next_button_clicked = false
     var body: some View {
         
         ZStack {
             AppColor.wall_color.ignoresSafeArea()
-            VStack{
+            
+            Spacer()
+            VStack {
+                Text("Connections 👻")
+                    .foregroundColor(.white)
+                    .font(.title)
+                Spacer()
+            }
+                VStack {
+                    
+                    Spacer()
+                        .frame(height: 300)
+                    HStack {
+                        Button(action: {
+                            if next_button_clicked == true {
+                                next_button_clicked = false
+                            }
+                            filter_accounts()
+                            
+                            print("Next Counter Button Current: \(message_index)")
+                            if message_iteration_max == true && current_username == cur_username {
+                                print("Couter Resetting from \(message_index)")
+                                message_index = 0
+                                
+                                
+                            } else {
+                                message_index += 1
+                            }
+                            
+                            fetch_messages()
+                            print("Next Button After Increment: \(message_index)")
+                            next_button_clicked = true
+                        }, label: {NextPageButtonView()})
+                        
+                        NavigationLink(destination:CompletionAccountView(), isActive: .constant(message_iteration_max == true), label:{Text("")})
+                        
+                        NavigationLink(destination:ConnectionMessageView(), isActive: .constant(next_button_clicked == true), label:{Text("")})
+                        
+                        
+                    }
+                
+                }
+                
+            VStack {
                 
                 HStack {
-                Text("Name: \(cur_username)")
+                Text("Name: \(message_username)")
                 Spacer()
                 }
                 Spacer()
                     .frame(height: 40)
                 HStack {
-                    Text("Message: \(rel_languages)")
+                    Text("Message: \(message_from_data)")
                     Spacer()
                 }
 

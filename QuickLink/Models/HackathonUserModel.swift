@@ -70,7 +70,51 @@ func set_vars() {
 }
 
 
+// Sample Connections
 
+var message_username: String = ""
+var message_from_data: String = ""
+var message_index: Int = 1
+var message_iteration_max: Bool = false
+var message_users: [String] = ["Dummy Account"]
+
+
+func filter_accounts() {
+    
+    if message_iteration_max == true {
+        message_index = 1
+        message_iteration_max = false
+    }
+    let dictionary = hackathon_accounts.accounts_networks
+    let relative_connection_data = dictionary[cur_username]!
+    for name in relative_connection_data.keys {
+        if message_users.contains(name) {
+            print("Name: \(name) already in message users list: \(message_users)")
+        } else {
+            message_users.append(name)
+        }
+    }
+
+    
+}
+
+func fetch_messages() {
+    
+    if message_index >= message_users.count {
+        message_username = "None"
+        message_from_data = "None"
+    } else {
+        let message_dictionary = hackathon_accounts.accounts_networks
+        let relative_connection_data = message_dictionary[cur_username]!
+        message_username = message_users[message_index]
+        message_from_data = relative_connection_data[message_username]![0]
+        print("Message Username: \(message_username)")
+        print("Message Data: \(message_from_data)")
+        
+    }
+
+    
+}
 
 
 

@@ -14,14 +14,7 @@ struct CompletionAccountView: View {
             home_color.ignoresSafeArea()
             
             VStack {
-                Text("Wow, you made it through all the accounts on the Platform 🎉")
-                    .bold()
-                    .padding()
-                    .font(.title)
-                    .frame(height:200)
-                    .frame(width:300)
-                    .foregroundColor(.white)
-                Text("Sadly, as fun as it sounds, there is nothing much beyond this point 🚫")
+                Text("Whoops, you reached the end. Sadly, as fun as it sounds, there is nothing much beyond this point 🚫")
                     .bold()
                     .padding()
                     .font(.title)
