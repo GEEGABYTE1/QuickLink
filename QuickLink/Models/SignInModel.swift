@@ -9,7 +9,13 @@
 
 import Foundation
 
+
+// Default Homepage Data
 public var cur_username: String = ""
+public var rel_languages: String = ""
+public var no_hackswon: String = ""
+public var rel_skills: String = ""
+public var rel_bio: String = ""
 
 func verify_user(rel_user: String) -> Bool {
     // Hackathon Account Model
@@ -91,7 +97,7 @@ func verify_account(user: String, pass: String) -> Bool {
     return false
 }
 
-func fetch_account_data(user: String ) -> [String] {
+func fetch_account_data(user: String ) -> [String]  {
     if cur_username != "" {
         let user_data = hackathon_accounts.accounts_hack[user]!
         print("Relative user data: \(user_data)")
@@ -99,10 +105,10 @@ func fetch_account_data(user: String ) -> [String] {
         
     } else {
         print("user not found")
+        return [""]
     }
     
-    return [""]
-    
+   
     
 }
 
@@ -111,9 +117,27 @@ func fetch_account_bio(user: String) -> String {
         let current_bio = hackathon_accounts.accounts_bio[cur_username]!
         print("Current Bio \(current_bio)")
         return current_bio
+        
     } else{
         print("User was not found?")
+        return ""
+        
     }
 }
     
 
+
+
+struct homepage_data {
+    
+    func set_default_vars (username: String) {
+        let default_account_data = fetch_account_data(user: username)
+        rel_languages = default_account_data[1]
+        no_hackswon = default_account_data[2]
+        rel_skills = default_account_data[3]
+        rel_bio = fetch_account_bio(user: username)
+        
+    }
+    
+ 
+}
