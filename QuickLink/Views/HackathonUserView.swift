@@ -25,6 +25,7 @@ struct HackathonUserView: View {
                 HStack{
                 Spacer()
                         .frame(width: 200)
+                    
                     Button(action: {
                         if next_button_clicked == true {
                             next_button_clicked = false
@@ -59,6 +60,8 @@ struct HackathonUserView: View {
                 
                 VStack{
                     
+                    
+                        
                     HStack {
                     Text("Name: \(current_username)")
                     Spacer()
@@ -101,6 +104,7 @@ struct HackathonUserView: View {
                     Spacer()
                         .frame(height: 40)
                     NavigationLink(destination: ConnectionsView(), label: {SendConnectionMessageView()})
+                    
                 }
             }
         }

@@ -42,13 +42,25 @@ struct ConnectionsView: View {
    
                 Spacer()
                 Button(action:{
-                    if var username_connections = hackathon_accounts.accounts_connection_messages[rel_user] {
-                        username_connections.append(connection_message)
-                        print("Message Sent")
+                    print("Current Username: \(cur_username)")
+                    
+                    
+                    if var user_connections = hackathon_accounts.accounts_networks[cur_username] {
+                        print("Account found")
+                        
+                        if var external_user_messages = user_connections[current_username] {
+                            print("External Account found")
+                            external_user_messages.append(connection_message)
+                        } else {
+                            print("External Account will be created")
+                            user_connections[current_username] = [connection_message]
+                        }
+                        
                     } else {
-                        print("Message was sent and Account was Created")
-                        hackathon_accounts.accounts_connection_messages[rel_user] = [connection_message]
+                        print("Account being created")
+                        hackathon_accounts.accounts_networks[cur_username] = ["Dummy Account" : [connection_message]]
                     }
+                    print("Account Networks: \(hackathon_accounts.accounts_networks)")
                     button_clicked = true
                     
                     
