@@ -22,8 +22,27 @@ struct HomepageView: View {
         ZStack {
             AppColor.wall_color.ignoresSafeArea()
             
+            VStack {
+                Text("Homepage 🌈")
+                
+                    .font(.title)
+                    .foregroundColor(.white)
+                Spacer()
+                    .frame(height: 90)
+                HStack{
+                Spacer()
+                        .frame(width: 200)
+                NavigationLink(destination:ConnectionsView(), label: {ConnectionsButtonView()})
+                
+                }
+                Spacer()
+                    
+                    
+            }
+            
             
             VStack{
+                
                 HStack {
                 Text("Name: \(cur_username)")
                 Spacer()
@@ -63,7 +82,7 @@ struct HomepageView: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 650)
+                    .frame(height: 590)
                 HStack {
                 Spacer()
                         .frame(width: 72)
