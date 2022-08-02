@@ -45,13 +45,16 @@ struct SignInView: View {
                     }
                     .padding()
                     .frame(height: 65)
-                    .disabled(disableForm)
 
-                        
-                    NavigationLink(destination: HomepageView(), isActive: .constant(verify_account(user: sign_in_user, pass: sign_in_pass) == true), label: {Text("Sign in").foregroundColor(.green).multilineTextAlignment(.center)})
-                        
                     
                     
+                    
+                    Section {
+                        
+                        NavigationLink(destination: HomepageView(), isActive: .constant(verify_account(user: sign_in_user, pass: sign_in_pass) == true), label: {Text("Sign in").foregroundColor(.green).multilineTextAlignment(.center)})
+                        
+                    }
+                    .disabled(disableForm)
                     
                     
                     
