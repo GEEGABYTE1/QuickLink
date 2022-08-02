@@ -5,9 +5,11 @@
 //  Created by Jaival Patel on 2022-08-01.
 //
 
+//SignIn Hackathon Model
+
 import Foundation
 
-
+public var cur_username: String = ""
 
 func verify_user(rel_user: String) -> Bool {
     // Hackathon Account Model
@@ -76,6 +78,7 @@ func verify_account(user: String, pass: String) -> Bool {
         
         if pass_result == true && user_verification == true {
             print("It is now true")
+            cur_username = user
             return true
         } else {
             print("It is false")
@@ -86,6 +89,31 @@ func verify_account(user: String, pass: String) -> Bool {
     // Should not reach this case
     print("Reached Final Case")
     return false
+}
+
+func fetch_account_data(user: String ) -> [String] {
+    if cur_username != "" {
+        let user_data = hackathon_accounts.accounts_hack[user]!
+        print("Relative user data: \(user_data)")
+        return user_data
+        
+    } else {
+        print("user not found")
+    }
+    
+    return [""]
+    
+    
+}
+
+func fetch_account_bio(user: String) -> String {
+    if cur_username != "" {
+        let current_bio = hackathon_accounts.accounts_bio[cur_username]!
+        print("Current Bio \(current_bio)")
+        return current_bio
+    } else{
+        print("User was not found?")
+    }
 }
     
 
