@@ -25,40 +25,56 @@ struct HomepageView: View {
             
             VStack{
                 HStack {
-                Text(cur_username)
+                Text("Name: \(cur_username)")
                 Spacer()
                 }
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 40)
                 HStack {
                     Text("Languages: \(rel_languages)")
                     Spacer()
                 }
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 40)
                 HStack {
                     Text("No. Hackathons won: \(no_hackswon)")
                     Spacer()
                 }
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 40)
                 HStack {
                     Text("Skills: \(rel_skills)")
                     Spacer()
                 }
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 40)
                 HStack {
                     Text("Bio: \(rel_bio)")
                     Spacer()
                 }
+
             }
             .padding()
             .font(.headline)
             .foregroundColor(AppColor.box_color)
-            .frame(width: 360, height: 520)
+            .frame(width: 360, height: 420)
             .background(Color.white)
             .cornerRadius(15.0)
+            
+            VStack {
+                Spacer()
+                    .frame(height: 650)
+                HStack {
+                Spacer()
+                        .frame(width: 72)
+                NavigationLink(destination: HackathonUserView(), label: {HackathonUserButtonView()})
+                Spacer()
+                    NavigationLink(destination:JobUserView(), label: {JobUserButtonView()})
+                Spacer()
+                    .frame(width: 70)
+                }
+                
+            }
 
             
         }

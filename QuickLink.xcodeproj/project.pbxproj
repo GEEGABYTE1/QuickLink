@@ -10,6 +10,10 @@
 		C9562EF72890595F000F555D /* JobAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9562EF62890595F000F555D /* JobAccountModel.swift */; };
 		C956BB4528988FFE005B43A8 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956BB4428988FFE005B43A8 /* SuccessView.swift */; };
 		C98B61ED2898777D00A91288 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B61EC2898777D00A91288 /* SignInModel.swift */; };
+		C98BD517289967A4009E5B63 /* HackathonUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD516289967A4009E5B63 /* HackathonUserView.swift */; };
+		C98BD5192899697A009E5B63 /* HackathonUserButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD5182899697A009E5B63 /* HackathonUserButtonView.swift */; };
+		C98BD51B28996A8D009E5B63 /* JobUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD51A28996A8D009E5B63 /* JobUserView.swift */; };
+		C98BD51D28996AE0009E5B63 /* JobUserButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BD51C28996AE0009E5B63 /* JobUserButtonView.swift */; };
 		C98C7E48288E12F10048AD24 /* QuickLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */; };
 		C98C7E4A288E12F10048AD24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C7E49288E12F10048AD24 /* HomeView.swift */; };
 		C98C7E4C288E12F30048AD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98C7E4B288E12F30048AD24 /* Assets.xcassets */; };
@@ -55,6 +59,10 @@
 		C9562EF62890595F000F555D /* JobAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobAccountModel.swift; sourceTree = "<group>"; };
 		C956BB4428988FFE005B43A8 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		C98B61EC2898777D00A91288 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		C98BD516289967A4009E5B63 /* HackathonUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUserView.swift; sourceTree = "<group>"; };
+		C98BD5182899697A009E5B63 /* HackathonUserButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUserButtonView.swift; sourceTree = "<group>"; };
+		C98BD51A28996A8D009E5B63 /* JobUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobUserView.swift; sourceTree = "<group>"; };
+		C98BD51C28996AE0009E5B63 /* JobUserButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobUserButtonView.swift; sourceTree = "<group>"; };
 		C98C7E44288E12F10048AD24 /* QuickLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98C7E47288E12F10048AD24 /* QuickLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLinkApp.swift; sourceTree = "<group>"; };
 		C98C7E49288E12F10048AD24 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -178,9 +186,13 @@
 				C9C3822F288F7CF9002C2609 /* PublishAccountView.swift */,
 				C98C7E88288E23EC0048AD24 /* JobCreationView.swift */,
 				C9AB0CE82890C61E00379B37 /* JobBioView.swift */,
+				C98BD516289967A4009E5B63 /* HackathonUserView.swift */,
+				C98BD51A28996A8D009E5B63 /* JobUserView.swift */,
 				C956BB4428988FFE005B43A8 /* SuccessView.swift */,
+				C98BD51C28996AE0009E5B63 /* JobUserButtonView.swift */,
 				C9B6105E2898B8A500C58B92 /* HomepageView.swift */,
 				C9C3822D288F7225002C2609 /* BioView.swift */,
+				C98BD5182899697A009E5B63 /* HackathonUserButtonView.swift */,
 				C98C7E7C288E1C140048AD24 /* SignInView.swift */,
 			);
 			path = Views;
@@ -330,17 +342,21 @@
 				C98C7E4A288E12F10048AD24 /* HomeView.swift in Sources */,
 				C98C7E87288E22050048AD24 /* JobCreationBoxView.swift in Sources */,
 				C9B6105F2898B8A500C58B92 /* HomepageView.swift in Sources */,
+				C98BD51D28996AE0009E5B63 /* JobUserButtonView.swift in Sources */,
 				C9AB0CE92890C61E00379B37 /* JobBioView.swift in Sources */,
 				C98C7E48288E12F10048AD24 /* QuickLinkApp.swift in Sources */,
+				C98BD5192899697A009E5B63 /* HackathonUserButtonView.swift in Sources */,
 				C98C7E7F288E1E910048AD24 /* SignUpBoxView.swift in Sources */,
 				C98B61ED2898777D00A91288 /* SignInModel.swift in Sources */,
 				C9C38230288F7CFA002C2609 /* PublishAccountView.swift in Sources */,
 				C98C7E81288E1ED70048AD24 /* SignUpView.swift in Sources */,
 				C9C3822E288F7225002C2609 /* BioView.swift in Sources */,
 				C956BB4528988FFE005B43A8 /* SuccessView.swift in Sources */,
+				C98BD517289967A4009E5B63 /* HackathonUserView.swift in Sources */,
 				C9C38226288F1E7B002C2609 /* HackathonAccountModel.swift in Sources */,
 				C9C38228288F665C002C2609 /* CreateAccountView.swift in Sources */,
 				C9562EF72890595F000F555D /* JobAccountModel.swift in Sources */,
+				C98BD51B28996A8D009E5B63 /* JobUserView.swift in Sources */,
 				C98C7E7B288E1A790048AD24 /* SignInBoxView.swift in Sources */,
 				C98C7E74288E142D0048AD24 /* ColorModel.swift in Sources */,
 				C98C7E7D288E1C140048AD24 /* SignInView.swift in Sources */,
