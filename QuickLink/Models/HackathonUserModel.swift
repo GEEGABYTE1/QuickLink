@@ -74,7 +74,7 @@ func set_vars() {
 
 var message_username: String = ""
 var message_from_data: String = ""
-var message_index: Int = 1
+var message_index: Int = 0
 var message_iteration_max: Bool = false
 var message_users: [String] = ["Dummy Account"]
 
@@ -82,7 +82,7 @@ var message_users: [String] = ["Dummy Account"]
 func filter_accounts() {
     
     if message_iteration_max == true {
-        message_index = 1
+        message_index = 0
         message_iteration_max = false
     }
     let dictionary = hackathon_accounts.accounts_networks
@@ -90,6 +90,7 @@ func filter_accounts() {
     for name in relative_connection_data.keys {
         if message_users.contains(name) {
             print("Name: \(name) already in message users list: \(message_users)")
+            
         } else {
             message_users.append(name)
         }
@@ -99,10 +100,12 @@ func filter_accounts() {
 }
 
 func fetch_messages() {
-    
+    print("Message Users Count: \(message_users.count)")
     if message_index >= message_users.count {
+        
         message_username = "None"
         message_from_data = "None"
+        message_iteration_max = true
     } else {
         let message_dictionary = hackathon_accounts.accounts_networks
         let relative_connection_data = message_dictionary[cur_username]!

@@ -32,7 +32,7 @@ struct HomepageView: View {
                 HStack{
                 Spacer()
                         .frame(width: 200)
-                NavigationLink(destination:ConnectionsView(), label: {ConnectionsButtonView()})
+                NavigationLink(destination:ConnectionMessageView(), label: {ConnectionsButtonView()})
                 
                 }
                 Spacer()

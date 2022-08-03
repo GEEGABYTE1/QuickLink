@@ -34,20 +34,16 @@ struct ConnectionMessageView: View {
                             
                             print("Next Counter Button Current: \(message_index)")
                             if message_iteration_max == true && current_username == cur_username {
-                                print("Couter Resetting from \(message_index)")
+                                print("Counter Resetting from \(message_index)")
                                 message_index = 0
-                                
-                                
-                            } else {
-                                message_index += 1
                             }
-                            
+                            message_index += 1
                             fetch_messages()
                             print("Next Button After Increment: \(message_index)")
                             next_button_clicked = true
                         }, label: {NextPageButtonView()})
                         
-                        NavigationLink(destination:CompletionAccountView(), isActive: .constant(message_iteration_max == true), label:{Text("")})
+                        NavigationLink(destination:CompletionAccountView(), isActive: .constant(message_index >= message_users.count), label:{Text("")})
                         
                         NavigationLink(destination:ConnectionMessageView(), isActive: .constant(next_button_clicked == true), label:{Text("")})
                         

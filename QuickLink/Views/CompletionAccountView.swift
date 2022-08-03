@@ -14,13 +14,14 @@ struct CompletionAccountView: View {
             home_color.ignoresSafeArea()
             
             VStack {
-                Text("Whoops, you reached the end. Sadly, as fun as it sounds, there is nothing much beyond this point 🚫")
+                Text("Whoops, you reached the end. Sadly, there is nothing passed this point 🚫")
                     .bold()
                     .padding()
                     .font(.title)
-                    .frame(height:200)
+                    .frame(height:600)
                     .frame(width:300)
                     .foregroundColor(.white)
+
                    
             }
         }

@@ -58,7 +58,7 @@ struct ConnectionsView: View {
                         
                     } else {
                         print("Account being created")
-                        hackathon_accounts.accounts_networks[cur_username] = ["Dummy Account" : [connection_message]]
+                        hackathon_accounts.accounts_networks[cur_username] = [current_username : [connection_message]]
                     }
                     print("Account Networks: \(hackathon_accounts.accounts_networks)")
                     button_clicked = true

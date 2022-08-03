@@ -22,7 +22,6 @@ struct SuccessMessageView: View {
                     .frame(height:400)
                     .frame(width:300)
                     .foregroundColor(.white)
-                    
                    
             }
             .navigationBarTitle("", displayMode: .inline)
