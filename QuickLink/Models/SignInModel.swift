@@ -11,11 +11,22 @@ import Foundation
 
 
 // Default Homepage Data
+public var statement: String = "No. Hackathons won"
 public var cur_username: String = ""
 public var rel_languages: String = ""
 public var no_hackswon: String = ""
 public var rel_skills: String = ""
 public var rel_bio: String = ""
+
+func update_statement(user: String) {
+    let account_result = verify_user(rel_user: user)
+    if account_result == true {
+        statement = "Years of Experience"
+        
+    } else {
+        print("No need to change statement")
+    }
+}
 
 func verify_user(rel_user: String) -> Bool {
     // Hackathon Account Model
@@ -73,6 +84,13 @@ func verify_pass(rel_pass: String, rel_user: String) -> Bool {
     return false
 }
 
+func verify_account_base(user: String) -> Bool {
+    if let rel_account = job_accounts.accounts_job[user] {
+        return true
+    } else {
+        return false
+    }
+}
 
 func verify_account(user: String, pass: String) -> Bool {
     let user_verification = verify_user(rel_user: user)
@@ -112,6 +130,21 @@ func fetch_account_data(user: String ) -> [String]  {
     
 }
 
+func fetch_account_data_job(user: String ) -> [String]  {
+    if cur_username != "" {
+        let user_data = job_accounts.accounts_job[user]!
+        print("Relative user data: \(user_data)")
+        return user_data
+        
+    } else {
+        print("user not found")
+        return [""]
+    }
+    
+   
+    
+}
+
 func fetch_account_bio(user: String) -> String {
     if cur_username != "" {
         let current_bio = hackathon_accounts.accounts_bio[cur_username]!
@@ -124,9 +157,24 @@ func fetch_account_bio(user: String) -> String {
         
     }
 }
-    
+
+
+func fetch_account_bio_job(user: String) -> String {
+    if cur_username != "" {
+        let current_bio = job_accounts.accounts_job_bio[cur_username]!
+        print("Current Bio \(current_bio)")
+        return current_bio
+        
+    } else{
+        print("User was not found?")
+        return ""
+        
+    }
+}
+
     
 func set_default_vars (username: String) {
+    
     let default_account_data = fetch_account_data(user: username)
     rel_languages = default_account_data[1]
     no_hackswon = default_account_data[2]
@@ -134,6 +182,19 @@ func set_default_vars (username: String) {
     rel_bio = fetch_account_bio(user: username)
     
 }
+
+
+func set_default_vars_job (username: String) {
+    
+    let default_account_data = fetch_account_data_job(user: username)
+    rel_languages = default_account_data[1]
+    no_hackswon = default_account_data[2]
+    rel_skills = default_account_data[3]
+    rel_bio = fetch_account_bio_job(user: username)
+    
+}
+
+
     
  
 

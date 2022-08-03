@@ -61,7 +61,7 @@ struct JobBioView: View {
                         button_clicked = false
                     }
                     job_accounts.accounts_job_bio[self.j_username] = job_bio
-                    job_accounts.accounts_job[self.j_username] = [self.j_password, self.j_languages, self.j_experience]
+                    job_accounts.accounts_job[self.j_username] = [self.j_password, self.j_languages, self.j_experience, self.j_skills]
                     print(job_accounts)
                     button_clicked = true
 

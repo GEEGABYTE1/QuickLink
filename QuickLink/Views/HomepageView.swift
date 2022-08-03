@@ -13,9 +13,11 @@ struct HomepageView: View {
     
     
     var body: some View {
-        
-        if cur_username != "" {
-            var update_homepage: () = set_default_vars(username: cur_username)
+        var _: () = update_statement(user: cur_username)
+        if cur_username != "" && statement == "No. Hackathons won" {
+            var _: () = set_default_vars(username: cur_username)
+        } else if cur_username != "" && statement == "Years of Experience" {
+            var _: () = set_default_vars_job(username: cur_username)
         }
         
         
@@ -56,7 +58,8 @@ struct HomepageView: View {
                 Spacer()
                     .frame(height: 40)
                 HStack {
-                    Text("No. Hackathons won: \(no_hackswon)")
+                    
+                    Text("\(statement): \(no_hackswon)")
                     Spacer()
                 }
                 Spacer()
