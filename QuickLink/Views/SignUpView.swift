@@ -15,10 +15,10 @@ struct SignUpView: View {
         
         NavigationView {
             ZStack {
-                AppColor.wall_color.ignoresSafeArea()
+                //AppColor.wall_color.ignoresSafeArea()
                
                 VStack {
-                    Text("Account Type")
+                    Text("Account Type 🕹")
                         .padding()
                         .font(.title)
                         .foregroundColor(.white)
@@ -42,6 +42,10 @@ struct SignUpView: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+            .background(Image("Background")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
             
 
             

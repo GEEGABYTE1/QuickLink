@@ -91,7 +91,9 @@ func verify_pass(rel_pass: String, rel_user: String) -> Bool {
 }
 
 func verify_account_base(user: String) -> Bool {
+    print("\(user) test")
     if let rel_account = job_accounts.accounts_job[user] {
+        print("True will be returned")
         return true
     } else {
         return false

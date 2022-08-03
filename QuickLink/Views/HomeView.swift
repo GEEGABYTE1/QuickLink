@@ -17,7 +17,8 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                home_color.ignoresSafeArea()
+
+                //home_color.ignoresSafeArea()
             VStack {
                 Text("QuickLink")
                     .padding()
@@ -36,18 +37,27 @@ struct HomeView: View {
                 
                 
             }
+            
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
             .navigationViewStyle(.stack)
+            
                 
                 
                 
 
-            }
+            }.background(Image("Background")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+
+            
 
             
         }
+
+
         
         
 

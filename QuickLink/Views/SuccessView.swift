@@ -14,7 +14,7 @@ struct SuccessView: View {
     
     var body: some View {
         ZStack {
-            home_color.ignoresSafeArea()
+            //home_color.ignoresSafeArea()
             
             VStack {
                 Text("Congratulations, your account is successfully made 🎆. You can now return to the home screen and Sign In 🦄")
@@ -31,6 +31,10 @@ struct SuccessView: View {
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
             .navigationViewStyle(.stack)
+            .background(Image("Background")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
             
         }
 

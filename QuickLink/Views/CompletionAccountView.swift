@@ -11,7 +11,7 @@ struct CompletionAccountView: View {
     let home_color = AppColor.wall_color
     var body: some View {
         ZStack {
-            home_color.ignoresSafeArea()
+            //home_color.ignoresSafeArea()
             
             VStack {
                 Text("Whoops, you reached the end. Sadly, there is nothing passed this point 🚫")
@@ -25,6 +25,10 @@ struct CompletionAccountView: View {
                    
             }
         }
+        .background(Image("Background")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
     }
 }
 

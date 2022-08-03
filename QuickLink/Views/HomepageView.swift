@@ -11,7 +11,7 @@ import SwiftUI
 
 struct HomepageView: View {
     
-    
+    @State var result_account = verify_account_base(user: cur_username)
     var body: some View {
         var _: () = update_statement(user: cur_username)
         if cur_username != "" && statement == "No. Hackathons won" {
@@ -22,7 +22,7 @@ struct HomepageView: View {
         
         
         ZStack {
-            AppColor.wall_color.ignoresSafeArea()
+            //AppColor.wall_color.ignoresSafeArea()
             
             VStack {
                 Text("Your Homepage 🌈")
@@ -94,7 +94,7 @@ struct HomepageView: View {
                 HStack {
                 Spacer()
                         .frame(width: 72)
-                NavigationLink(destination: HackathonUserView(), label: {HackathonUserButtonView()})
+                    NavigationLink(destination: HackathonUserView(), label: {HackathonUserButtonView()})
                 Spacer()
                     NavigationLink(destination:JobUserView(), label: {JobUserButtonView()})
                 Spacer()
@@ -105,6 +105,14 @@ struct HomepageView: View {
 
             
         }
+        .background(Image("Background")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .navigationViewStyle(.stack)
         
         
         

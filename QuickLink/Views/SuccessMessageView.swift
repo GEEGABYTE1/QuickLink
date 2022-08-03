@@ -12,7 +12,7 @@ struct SuccessMessageView: View {
     let home_color = AppColor.wall_color
     var body: some View {
         ZStack {
-            home_color.ignoresSafeArea()
+            //home_color.ignoresSafeArea()
             
             VStack {
                 Text("Connection Message Successfully Sent ✅")
@@ -26,6 +26,10 @@ struct SuccessMessageView: View {
             }
             .navigationBarTitle("", displayMode: .inline)
             .navigationViewStyle(.stack)
+            .background(Image("Background")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
             
         }
     }

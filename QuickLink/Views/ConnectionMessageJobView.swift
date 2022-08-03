@@ -12,7 +12,7 @@ struct ConnectionMessageJobView: View {
     var body: some View {
         
         ZStack {
-            AppColor.wall_color.ignoresSafeArea()
+            //AppColor.wall_color.ignoresSafeArea()
             
             Spacer()
             VStack {
@@ -73,9 +73,11 @@ struct ConnectionMessageJobView: View {
             .background(Color.white)
             .cornerRadius(15.0)
         }
-        VStack {
-            
-        }
+        .background(Image("Background")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+
     
 
 

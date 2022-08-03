@@ -23,7 +23,7 @@ struct SignInView: View {
         
         ZStack {
             
-            AppColor.wall_color.ignoresSafeArea()
+            //AppColor.wall_color.ignoresSafeArea()
             
             VStack {
                 
@@ -61,10 +61,10 @@ struct SignInView: View {
             
 
                 }
-                .background(AppColor.wall_color)
+                //.background(AppColor.wall_color)
                 .foregroundColor(AppColor.box_color)
                 .accentColor(AppColor.box_color)
-                .background(AppColor.wall_color)
+                //.background(AppColor.wall_color)
                 .onAppear { // ADD THESE
                   UITableView.appearance().backgroundColor = .clear
                 }
@@ -91,9 +91,13 @@ struct SignInView: View {
             
         }
         .navigationBarTitle("")
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+        //.navigationBarHidden(true)
+        //.navigationBarBackButtonHidden(true)
         .navigationViewStyle(.stack)
+        .background(Image("Background")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
          
             
         

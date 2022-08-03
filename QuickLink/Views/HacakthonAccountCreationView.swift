@@ -34,7 +34,7 @@ struct HackathonCreationView: View {
         
         ZStack {
             
-            AppColor.wall_color.ignoresSafeArea()
+            //AppColor.wall_color.ignoresSafeArea()
             
             VStack {
                 
@@ -91,10 +91,10 @@ struct HackathonCreationView: View {
             
 
                 }
-                .background(AppColor.wall_color)
-                .foregroundColor(AppColor.box_color)
+                //.background(AppColor.wall_color)
+                .foregroundColor(AppColor.alt_text_color)
                 .accentColor(AppColor.box_color)
-                .background(AppColor.wall_color)
+                //.background(AppColor.wall_color)
                 .onAppear { // ADD THESE
                   UITableView.appearance().backgroundColor = .clear
                 }
@@ -125,10 +125,16 @@ struct HackathonCreationView: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationViewStyle(.stack)
+        .background(Image("Background")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        
          
             
         
     }
+    
         
 }
 

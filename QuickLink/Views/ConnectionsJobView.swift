@@ -14,7 +14,7 @@ struct ConnectionsJobView: View {
         
         
         ZStack {
-            AppColor.wall_color.ignoresSafeArea()
+            //AppColor.wall_color.ignoresSafeArea()
             VStack {
               Spacer()
                     .frame(height: 30)
@@ -76,6 +76,10 @@ struct ConnectionsJobView: View {
             }.padding()
             
         }
+        .background(Image("Background")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
     }
 }
 
