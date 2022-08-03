@@ -54,7 +54,7 @@ func set_vars() {
     } else {
         print("Usernames List Count: \(usernames_list.count)")
         current_username = usernames_list[next_counter]
-        print("Current username: \(rel_user)")
+        print("Current username: \(current_username)")
         let current_username_full_data = hackathon_accounts.accounts_hack[current_username]!
         current_username_langauges = current_username_full_data[1]
         print("Current username will be updated to: \(current_username_full_data)")

@@ -44,6 +44,7 @@
 		C9C38228288F665C002C2609 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C38227288F665C002C2609 /* CreateAccountView.swift */; };
 		C9C3822E288F7225002C2609 /* BioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C3822D288F7225002C2609 /* BioView.swift */; };
 		C9C38230288F7CFA002C2609 /* PublishAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C3822F288F7CF9002C2609 /* PublishAccountView.swift */; };
+		C9D83E312899FE5B00341195 /* JobUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D83E302899FE5B00341195 /* JobUserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		C9C38227288F665C002C2609 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		C9C3822D288F7225002C2609 /* BioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioView.swift; sourceTree = "<group>"; };
 		C9C3822F288F7CF9002C2609 /* PublishAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishAccountView.swift; sourceTree = "<group>"; };
+		C9D83E302899FE5B00341195 /* JobUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobUserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 				C98B61EC2898777D00A91288 /* SignInModel.swift */,
 				C98BD52928997506009E5B63 /* HackathonUserModel.swift */,
 				C9562EF62890595F000F555D /* JobAccountModel.swift */,
+				C9D83E302899FE5B00341195 /* JobUserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				C98BD52C28997628009E5B63 /* NextPageButtonView.swift in Sources */,
 				C98BD523289973AB009E5B63 /* SendConnectionMessageView.swift in Sources */,
 				C9AB0CE92890C61E00379B37 /* JobBioView.swift in Sources */,
+				C9D83E312899FE5B00341195 /* JobUserModel.swift in Sources */,
 				C98C7E48288E12F10048AD24 /* QuickLinkApp.swift in Sources */,
 				C98BD51F28996BD5009E5B63 /* ConnectionsButtonView.swift in Sources */,
 				C98BD5192899697A009E5B63 /* HackathonUserButtonView.swift in Sources */,
