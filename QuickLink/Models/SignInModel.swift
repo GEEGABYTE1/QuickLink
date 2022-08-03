@@ -20,24 +20,26 @@ public var rel_bio: String = ""
 
 func update_statement(user: String) {
     let account_result = verify_user(rel_user: user)
-    if account_result == true {
-        statement = "Years of Experience"
+    if account_result != true {
+        print("No need to change statement")
         
     } else {
-        print("No need to change statement")
+        
+        statement = "Years of Experience"
     }
 }
 
 func verify_user(rel_user: String) -> Bool {
     // Hackathon Account Model
     let accounts_hack_keys = hackathon_accounts.accounts_hack.keys
-    print(accounts_hack_keys)
+    print("Account Hack Keys \(accounts_hack_keys)")
     for username in accounts_hack_keys {
         if username == rel_user {
             return true
         } else {
             continue
         }
+    return false
     }
     
     //Job Account Model

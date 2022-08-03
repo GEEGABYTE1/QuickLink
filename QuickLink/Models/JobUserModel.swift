@@ -83,9 +83,10 @@ func filter_accounts_job() {
         message_index_job = 0
         message_iteration_max_job = false
     }
-    let dictionary = job_accounts.accounts_networks_job
-    let relative_connection_data = dictionary[cur_username]!
-    for name in relative_connection_data.keys {
+    let dictionary_job = job_accounts.accounts_networks_job
+    print("Cur username: \(cur_username)")
+    let relative_connection_data_job = dictionary_job[cur_username]!
+    for name in relative_connection_data_job.keys {
         if message_users_job.contains(name) {
             print("Name: \(name) already in message users list: \(message_users_job)")
             
@@ -107,9 +108,9 @@ func fetch_messages_job() {
         message_iteration_max_job = true
     } else {
         let message_dictionary = job_accounts.accounts_networks_job
-        let relative_connection_data = message_dictionary[cur_username]!
-        message_username = message_users_job[message_index_job]
-        message_from_data = relative_connection_data[message_username_job]![0]
+        let relative_connection_data_job = message_dictionary[cur_username]!
+        message_username_job = message_users_job[message_index_job]
+        message_from_data_job = relative_connection_data_job[message_username_job]![0]
         print("Message Username: \(message_username_job)")
         print("Message Data: \(message_from_data_job)")
         

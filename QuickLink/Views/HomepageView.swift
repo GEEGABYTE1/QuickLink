@@ -34,7 +34,12 @@ struct HomepageView: View {
                 HStack{
                 Spacer()
                         .frame(width: 200)
-                NavigationLink(destination:ConnectionMessageView(), label: {ConnectionsButtonView()})
+                    if statement == "Years of Experience" {
+                        NavigationLink(destination:ConnectionMessageJobView(), label: {ConnectionsButtonView()})
+                    } else {
+                        NavigationLink(destination:ConnectionMessageView(), label: {ConnectionsButtonView()})
+                    }
+                
                 
                 }
                 Spacer()

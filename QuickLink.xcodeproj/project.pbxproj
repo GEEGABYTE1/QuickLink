@@ -45,6 +45,8 @@
 		C9C3822E288F7225002C2609 /* BioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C3822D288F7225002C2609 /* BioView.swift */; };
 		C9C38230288F7CFA002C2609 /* PublishAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C3822F288F7CF9002C2609 /* PublishAccountView.swift */; };
 		C9D83E312899FE5B00341195 /* JobUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D83E302899FE5B00341195 /* JobUserModel.swift */; };
+		C9D83E33289A017F00341195 /* ConnectionsJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D83E32289A017F00341195 /* ConnectionsJobView.swift */; };
+		C9D83E35289A030B00341195 /* ConnectionMessageJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D83E34289A030B00341195 /* ConnectionMessageJobView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		C9C3822D288F7225002C2609 /* BioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioView.swift; sourceTree = "<group>"; };
 		C9C3822F288F7CF9002C2609 /* PublishAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishAccountView.swift; sourceTree = "<group>"; };
 		C9D83E302899FE5B00341195 /* JobUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobUserModel.swift; sourceTree = "<group>"; };
+		C9D83E32289A017F00341195 /* ConnectionsJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsJobView.swift; sourceTree = "<group>"; };
+		C9D83E34289A030B00341195 /* ConnectionMessageJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionMessageJobView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,8 +213,10 @@
 				C98BD53128999F3A009E5B63 /* CompletionAccountView.swift */,
 				C956BB4428988FFE005B43A8 /* SuccessView.swift */,
 				C98BD522289973AB009E5B63 /* SendConnectionMessageView.swift */,
+				C9D83E32289A017F00341195 /* ConnectionsJobView.swift */,
 				C98BD51C28996AE0009E5B63 /* JobUserButtonView.swift */,
 				C98BD52028996C98009E5B63 /* ConnectionsView.swift */,
+				C9D83E34289A030B00341195 /* ConnectionMessageJobView.swift */,
 				C98BD52728997463009E5B63 /* ConnectionMessageView.swift */,
 				C98BD52D28997B5F009E5B63 /* SuccessMessageView.swift */,
 				C98BD52B28997628009E5B63 /* NextPageButtonView.swift */,
@@ -370,6 +376,7 @@
 				C98C7E87288E22050048AD24 /* JobCreationBoxView.swift in Sources */,
 				C9B6105F2898B8A500C58B92 /* HomepageView.swift in Sources */,
 				C98BD51D28996AE0009E5B63 /* JobUserButtonView.swift in Sources */,
+				C9D83E35289A030B00341195 /* ConnectionMessageJobView.swift in Sources */,
 				C98BD52E28997B5F009E5B63 /* SuccessMessageView.swift in Sources */,
 				C98BD52C28997628009E5B63 /* NextPageButtonView.swift in Sources */,
 				C98BD523289973AB009E5B63 /* SendConnectionMessageView.swift in Sources */,
@@ -386,6 +393,7 @@
 				C9C3822E288F7225002C2609 /* BioView.swift in Sources */,
 				C956BB4528988FFE005B43A8 /* SuccessView.swift in Sources */,
 				C98BD53228999F3A009E5B63 /* CompletionAccountView.swift in Sources */,
+				C9D83E33289A017F00341195 /* ConnectionsJobView.swift in Sources */,
 				C98BD517289967A4009E5B63 /* HackathonUserView.swift in Sources */,
 				C9C38226288F1E7B002C2609 /* HackathonAccountModel.swift in Sources */,
 				C9C38228288F665C002C2609 /* CreateAccountView.swift in Sources */,

@@ -103,7 +103,7 @@ struct JobUserView: View {
                 VStack {
                     Spacer()
                         .frame(height: 40)
-                    NavigationLink(destination: ConnectionsView(), label: {SendConnectionMessageView()})
+                    NavigationLink(destination: ConnectionsJobView(), label: {SendConnectionMessageView()})
                     
                 }
             }
