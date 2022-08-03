@@ -19,13 +19,15 @@ public var rel_skills: String = ""
 public var rel_bio: String = ""
 
 func update_statement(user: String) {
-    let account_result = verify_user(rel_user: user)
-    if account_result != true {
-        print("No need to change statement")
+    let account_result = verify_account_base(user: user)
+    if account_result == true {
+        print("Changing Statement")
+        statement = "Years of Experience"
+        
         
     } else {
+        print("No need to change statement")
         
-        statement = "Years of Experience"
     }
 }
 
@@ -39,7 +41,7 @@ func verify_user(rel_user: String) -> Bool {
         } else {
             continue
         }
-    return false
+    
     }
     
     //Job Account Model
@@ -56,6 +58,8 @@ func verify_user(rel_user: String) -> Bool {
     return false
     
 }
+
+
 
 func verify_pass(rel_pass: String, rel_user: String) -> Bool {
     
