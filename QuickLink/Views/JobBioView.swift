@@ -8,6 +8,7 @@ import SwiftUI
 
 struct JobBioView: View {
     
+    @State var button_clicked: Bool = true
     @State var job_bio: String = ""
     var j_username: String
     var j_password: String
@@ -56,14 +57,20 @@ struct JobBioView: View {
                 Spacer()
                 
                 Button(action:{
+                    if button_clicked == true {
+                        button_clicked = false
+                    }
                     job_accounts.accounts_job_bio[self.j_username] = job_bio
                     job_accounts.accounts_job[self.j_username] = [self.j_password, self.j_languages, self.j_experience]
                     print(job_accounts)
+                    button_clicked = true
 
                     
                 }, label: {
                     PublishAccountView()
                 })
+                
+                NavigationLink(destination: SuccessView(), isActive: .constant(button_clicked == true), label: { Text("")})
                 
                 
             }.padding()

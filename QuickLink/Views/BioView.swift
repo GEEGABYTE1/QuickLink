@@ -58,6 +58,9 @@ struct BioView: View {
    
                 Spacer()
                 Button(action:{
+                    if button_clicked == true {
+                        button_clicked = false
+                    }
                     hackathon_accounts.accounts_bio[self.hack_username] = bio
                     hackathon_accounts.accounts_hack[self.hack_username] = [self.hack_password, self.hack_languages, self.hack_no_hackathons_won, self.hack_skills]
                     print(hackathon_accounts)
