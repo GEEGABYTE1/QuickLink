@@ -18,14 +18,15 @@ Another aspect that is unique to QuickLink is the networking process. Whether it
 Moreover, with a Tinder-like UI, finding developers to network with is more accessible as you don't have to search their profiles up, and only have to press the "next" button to be prompted by another user if interested.
 
 
-# Updates
+# Updates 🌈
+
 In the coming updates, QuickLink aims to:
 - QR Code Integration - Users can scan their QR codes to find the correlated profiles with ease.
 - Cross-Compatible: Allow Signing-In from different platforms as well as having the ability to make an account for both types (hackathons, and jobs), and not just one.
 - Security Verification Protocols
 
 
-# Future Releases
+# Future Releases 🙌🏻
 
 August 2022:
 ```
@@ -36,7 +37,7 @@ BETA Release 2.0
 First Production Level Version: 1.0
 ```
 
-# More Information
+# More Information 📚
 Here are some of the ways you can find me:
  - [www.jaivalpatel.com]
  - [Twitter](https://twitter.com/patjaival)
