@@ -28,18 +28,22 @@ In the coming updates, QuickLink aims to:
 # Future Releases
 
 August 2022:
-'''
+```
 BETA Release 2.0
-'''
+```
 (Anticipated) October 2022: 
-'''
-Version 1
-'''
-
-
-
-
-
-
+```
+First Production Level Version: 1.0
+```
 
 # More Information
+Here are some of the ways you can find me:
+ - [www.jaivalpatel.com]
+ - [Twitter](https://twitter.com/patjaival)
+ - [npm](https://www.npmjs.com/~jaivalpatel1)
+ - [Instagram](https://www.instagram.com/jaivalpatelll/)
+
+Made by @Jaival - 2022
+
+
+
